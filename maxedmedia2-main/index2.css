@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cairo&family=Martel+Sans&family=Mitr&family=Poppins:wght@500&family=Roboto:ital@1&family=Tajawal:wght@300&display=swap');
+
+.testimonial-card .card-up {
+    height: 170px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+body {
+    font-family: 'Alex Brush', 'cursive';
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --nav_color: #BEBEBE;
+    --yello: #F7AB00;
+    --red: #FE0000;
+    --orange: #FF685F;
+    --blue: #03A4ED;
+    --body_color: #2B3540;
+}
+
+.navbar {
+    padding-bottom: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--black);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--orange);
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .active {
+    color: var(--orange);
+}
+
+#contactus {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#contactus:hover {
+    background-color: var(--blue);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#contactus  {
+    color: var(--white);
+    padding: 10px 25px;
+    font-weight: 400;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+.imge00 img {
+    height: 700px;
+    width: 700px;
+}
+
+.imge00 img:hover {
+    zoom: 100%;
+    transition: .3s ease-in-out;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+@media screen and (max-width:415px) {
+    .imge00 img {
+        height: 450px;
+    }
+}
+.main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 200px;
+    background: #fff;
+    margin-top: 10%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: var(--orange);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon
+ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social_icon li {
+    list-style: none;}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: var(--blue);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff url('wave-1.png');
+    background-size: 1000px 100px;
+
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 3s linear infinite;
+}
+
+
+@keyframes animatewave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+
+}
+
+
+.zoom li a {
+    transition: 1s;
+}
+
+.zoom li a:hover {
+    transform: scale(1.1);
+}
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 0 15px var(--black2);
+    overflow: hidden;
+    height: 70px;
+}
+.nav_info{
+    float: right;
+}
+.navbar a {
+    font-size: 16px;
+    color: var(--black);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: var(--orange);
+}
+/* Style the toggle button for smaller screens */
+.navbar .toggle-button {
+    display: none;
+    float: right;
+    padding: 10px 16px;
+    background-color: var(--white);
+    color: var(--orange);
+    border: none;
+    cursor: pointer;
+    
+  
+}
+.navbar .toggle-button img{
+    width: 24px;
+    height: 24px;
+}
+
+/* Add a media query for responsiveness */
+@media screen and (max-width: 600px) {
+    /* .navbar a:not(.toggle-button) {
+        display: none;
+    } */
+    
+    .navbar .toggle-button {
+        display: block;
+    }
+    .navbar-brand{
+        margin-left: 0;
+    }
+    /* .navbar{
+        box-shadow: none;
+    } */
+   
+}
+
+/* Style the menu when it's open */
+.menu {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px var(--black2);
+}
+
+.menu a {
+    display: block;
+    padding: 14px 16px;
+    color: var(--black);
+    text-decoration: none;
+}
+.menu a:hover{
+    color: var(--orange);
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar .active {
+    color: var(--orange);
+}
+
+#contactus {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 45px;
+    margin-right: 30px;
+}
+
+#contactus:hover {
+    background-color: var(--blue);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#contactus  {
+    color: var(--white);
+    padding: 10px 25px;
+    font-weight: 400;
+}
